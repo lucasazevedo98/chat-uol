@@ -1,10 +1,11 @@
-const UUID_PARTICIPANTE = "https://mock-api.driven.com.br/api/v6/uol/participants/b2ddb65a-f663-469e-b896-8881b95e1966"
+﻿const UUID_PARTICIPANTE = "https://mock-api.driven.com.br/api/v6/uol/participants/b2ddb65a-f663-469e-b896-8881b95e1966"
 const UUID_STATUS = "https://mock-api.driven.com.br/api/v6/uol/status/b2ddb65a-f663-469e-b896-8881b95e1966"
 const UUID_MENSAGENS = "https://mock-api.driven.com.br/api/v6/uol/messages/b2ddb65a-f663-469e-b896-8881b95e1966"
 
 let usuario = prompt("Qual seu nome?")
 
 let mensagens = []
+
 let usuariosAtivos = []
 
 let outroUsuario = "Todos", tipoDaMsg = "message";
