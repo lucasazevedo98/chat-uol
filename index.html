@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="cima">
+        <img src="image/logo.png" />
+        <ion-icon name="people" onclick="exibirModal()"></ion-icon>
+    </div>
+
+    <div class="chat">
+
+    </div>
+
+    <div class="baixo">
+        <div>
+        <input type="text" placeholder="Escreva aqui..." class="enviar" />
+        <p style="color:grey" class="texto">Enviando para Todos(Publico)</p>
+    </div>
+        <ion-icon name="paper-plane-outline" onclick="enviarMensagens()"></ion-icon>
+
+    </div>
+
+
+    <div class="modal" onclick="fecharmodal()"></div>
+
+    <div class="menu">
+
+        <h2>Escolha um contato para enviar mensagem:</h2>
+
+
+        <div class="contatos">
+            <div class="opcoes" onclick="pegarOutroUsuario(this)">
+                <ion-icon name="people"></ion-icon>
+                <p>Todos</p>
+            </div>
+            <div class="usuarios-ativos">
+
+
+            </div>
+
+
+        </div>
+
+        <h2>Escolha a visibilidade:</h2>
+
+        <div class="visibilidade">
+
+
+            <div class="opcoes" onclick="pegarOTipo(this)">
+                <ion-icon name="lock-open"></ion-icon>
+                <p>Publica</p>
+            </div>
+            <div class="opcoes" onclick="pegarOTipo(this)">
+                <ion-icon name="lock-closed"></ion-icon>
+                <p>Reservadamente</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
